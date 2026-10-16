@@ -1,22 +1,24 @@
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #6b7280;
-  --card: #f3f4f6;
-  --border: #e5e7eb;
-  --accent: #111111;
-  --accent-text: #ffffff;
+  --bg: #fff8e7;
+  --text: #2b2420;
+  --muted: #7a6e64;
+  --card: #f3ead3;
+  --border: #e6d9bc;
+  --accent: #2b2420;
+  --accent-text: #fff8e7;
+  --brand: #8b5e3c;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111111;
-    --text: #ffffff;
-    --muted: #9ca3af;
-    --card: #1c1c1c;
-    --border: #2e2e2e;
-    --accent: #ffffff;
-    --accent-text: #111111;
+    --bg: #1e1916;
+    --text: #fff8e7;
+    --muted: #b3a697;
+    --card: #2b2420;
+    --border: #3d332c;
+    --accent: #fff8e7;
+    --accent-text: #2b2420;
+    --brand: #c8956a;
   }
 }
 
@@ -44,7 +46,7 @@ body {
 
 .eyebrow {
   margin: 0;
-  color: var(--accent);
+  color: var(--brand);
   font-weight: 600;
   letter-spacing: 0.04em;
 }
@@ -84,8 +86,9 @@ h1 {
 .btn:hover { opacity: 0.88; }
 
 .btn.ghost {
+  border-color: var(--brand);
   background: transparent;
-  color: var(--accent);
+  color: var(--brand);
 }
 
 section { padding: 56px 0 0; }
@@ -123,7 +126,7 @@ h3 {
 
 .card .meta {
   font-size: 0.875rem;
-  color: var(--accent);
+  color: var(--brand);
 }
 
 .list {
