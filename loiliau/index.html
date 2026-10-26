@@ -20,6 +20,8 @@
   h3 { font-size: 17px; margin: 20px 0 4px; }
   .lead { font-size: 19px; margin: 16px 0 0; }
   a { color: var(--green); }
+  .kofi { display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--green);
+    color: #fff; font-weight: 700; text-decoration: none; }
   footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -51,6 +53,18 @@
 
   <h2>聯絡我們</h2>
   <p>遇到問題、想提建議，或要檢舉不當的使用者，請寫信到 <a href="mailto:oscar@oscarchiu.dev?subject=%E4%BE%86%E8%81%8A">oscar@oscarchiu.dev</a>。</p>
+
+  <!-- Hidden unless opened outside the app: App Review does not allow an app to lead to tips for its developer. -->
+  <section id="sponsor" hidden>
+    <h2>支持來聊</h2>
+    <p>來聊會一直免費、不放廣告。如果它幫上了你和家人，歡迎請開發者喝杯咖啡，幫忙支付伺服器和開發者帳號的費用。</p>
+    <p><a class="kofi" href="https://ko-fi.com/oscarchiudev" target="_blank" rel="noopener">☕ 在 Ko-fi 請我喝咖啡</a></p>
+  </section>
+  <script>
+    if (new URLSearchParams(location.search).get('from') !== 'app') {
+      document.getElementById('sponsor').hidden = false;
+    }
+  </script>
 
   <footer>© 2026 Oscar Chiu · <a href="privacy/">隱私權政策</a> · <a href="terms/">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
 </main>
