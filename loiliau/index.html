@@ -22,43 +22,65 @@
   a { color: var(--green); }
   .kofi { display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--green);
     color: #fff; font-weight: 700; text-decoration: none; }
+  .lang { display: flex; justify-content: flex-end; margin-bottom: 24px; }
+  .lang label { display: inline-flex; position: relative; max-width: 100%; }
+  .lang svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--green); pointer-events: none; }
+  .lang .chevron { left: auto; right: 12px; width: 16px; height: 16px; }
+  /* Reset native chrome so Safari honors padding and does not add a second arrow. */
+  .lang select { -webkit-appearance: none; appearance: none; display: block; font: inherit; font-size: 16px; line-height: 1.25;
+    cursor: pointer; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 8px;
+    padding: 10px 38px 10px 40px; min-height: 44px; max-width: 100%; }
+  .lang select:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
   footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
 <body>
 <main>
-  <header><div class="icon" aria-hidden="true">聊</div><h1>來聊 LoiLiau</h1></header>
-  <p class="lead">給長輩用的免費語音通話 app：家人幫忙設定一次，長輩之後只要點一下朋友就能撥出。</p>
-  <p>名字取自客家話的「來聊」（loi liau），就是「來坐、來講話」的意思。完全免費，不放廣告、不做追蹤，通話加密、不錄音。</p>
+  <nav class="lang" aria-label="Language">
+    <label>
+      <span class="sr-only">語言 / Language / Bahasa</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+      <select id="language-select">
+        <option value="zh" lang="zh-Hant">繁體中文</option>
+        <option value="en" lang="en">English</option>
+        <option value="id" lang="id">Bahasa Indonesia</option>
+      </select>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg>
+    </label>
+  </nav>
+  <header><div class="icon" aria-hidden="true">聊</div><h1 data-i18n="name">來聊 LoiLiau</h1></header>
+  <p class="lead" data-i18n="lead">給長輩用的免費語音通話 app：家人幫忙設定一次，長輩之後只要點一下朋友就能撥出。</p>
+  <p data-i18n="about">名字取自客家話的「來聊」（loi liau），就是「來坐、來講話」的意思。完全免費，不放廣告、不做追蹤，通話加密、不錄音。</p>
 
-  <h2>怎麼開始</h2>
+  <h2 data-i18n="start">怎麼開始</h2>
   <ol>
-    <li>輸入名字，就能以訪客身分開始使用，不需要手機號碼。</li>
-    <li>加朋友：一方在「加朋友」顯示 QR code 或 6 位數配對碼，另一方掃描或輸入，雙方就互為朋友。</li>
-    <li>回到主畫面，點朋友的頭像就會撥出。</li>
+    <li data-i18n="stepName">輸入名字，就能以訪客身分開始使用，不需要手機號碼。</li>
+    <li data-i18n="stepPair">加朋友：一方在「加朋友」顯示 QR code 或 6 位數配對碼，另一方掃描或輸入，雙方就互為朋友。</li>
+    <li data-i18n="stepCall">回到主畫面，點朋友的頭像就會撥出。</li>
   </ol>
-  <p>設定在主畫面右上角的灰色齒輪，可以換大頭貼、改朋友的稱呼、綁定帳號。</p>
+  <p data-i18n="settings">設定在主畫面右上角的灰色齒輪，可以換大頭貼、改朋友的稱呼、綁定帳號。</p>
 
-  <h2>常見問題</h2>
-  <h3>App 沒開，電話會響嗎？</h3>
-  <p>會。請允許來聊的通知；Android 手機也請允許「全螢幕通知」，並把來聊從省電限制中排除。</p>
-  <h3>換手機時，朋友名單會不見嗎？</h3>
-  <p>訪客帳號只存在原本的手機。換手機前，請到設定綁定 Apple、Google 帳號或信箱，在新手機用同一個帳號登入，就能找回朋友名單。</p>
-  <h3>不想再接到某個人的電話？</h3>
-  <p>到設定的「朋友名單」刪除對方。刪除後雙方都無法再打給對方，除非重新配對。</p>
-  <h3>怎麼刪除帳號？</h3>
-  <p>到設定最下面按「刪除帳號」。資料會立即刪除，詳見<a href="privacy/">隱私權政策</a>。</p>
-  <h3>可以打 119 或一般電話嗎？</h3>
-  <p>不行。來聊只能打給配對過的朋友，緊急時請用手機撥打 119 或 110。</p>
+  <h2 data-i18n="faq">常見問題</h2>
+  <h3 data-i18n="ringQuestion">App 沒開，電話會響嗎？</h3>
+  <p data-i18n="ringAnswer">會。請允許來聊的通知；Android 手機也請允許「全螢幕通知」，並把來聊從省電限制中排除。</p>
+  <h3 data-i18n="phoneQuestion">換手機時，朋友名單會不見嗎？</h3>
+  <p data-i18n="phoneAnswer">訪客帳號只存在原本的手機。換手機前，請到設定綁定 Apple、Google 帳號或信箱，在新手機用同一個帳號登入，就能找回朋友名單。</p>
+  <h3 data-i18n="removeQuestion">不想再接到某個人的電話？</h3>
+  <p data-i18n="removeAnswer">到設定的「朋友名單」刪除對方。刪除後雙方都無法再打給對方，除非重新配對。</p>
+  <h3 data-i18n="deleteQuestion">怎麼刪除帳號？</h3>
+  <p data-i18n="deleteAnswer">到設定最下面按「刪除帳號」。資料會立即刪除，詳見<a href="privacy/">隱私權政策</a>。</p>
+  <h3 data-i18n="emergencyQuestion">可以打 119 或一般電話嗎？</h3>
+  <p data-i18n="emergencyAnswer">不行。來聊只能打給配對過的朋友，緊急時請用手機撥打 119 或 110。</p>
 
-  <h2>聯絡我們</h2>
-  <p>遇到問題、想提建議，或要檢舉不當的使用者，請寫信到 <a href="mailto:oscar@oscarchiu.dev?subject=%E4%BE%86%E8%81%8A">oscar@oscarchiu.dev</a>。</p>
+  <h2 data-i18n="contact">聯絡我們</h2>
+  <p data-i18n="contactBody">遇到問題、想提建議，或要檢舉不當的使用者，請寫信到 <a href="mailto:oscar@oscarchiu.dev?subject=%E4%BE%86%E8%81%8A">oscar@oscarchiu.dev</a>。</p>
 
   <!-- Hidden unless opened outside the app: App Review does not allow an app to lead to tips for its developer. -->
   <section id="sponsor" hidden>
-    <h2>支持來聊</h2>
-    <p>來聊會一直免費、不放廣告。如果它幫上了你和家人，歡迎請開發者喝杯咖啡，幫忙支付伺服器和開發者帳號的費用。</p>
-    <p><a class="kofi" href="https://ko-fi.com/oscarchiudev" target="_blank" rel="noopener">☕ 在 Ko-fi 請我喝咖啡</a></p>
+    <h2 data-i18n="support">支持來聊</h2>
+    <p data-i18n="supportBody">來聊會一直免費、不放廣告。如果它幫上了你和家人，歡迎請開發者喝杯咖啡，幫忙支付伺服器和開發者帳號的費用。</p>
+    <p><a data-i18n="coffee" class="kofi" href="https://ko-fi.com/oscarchiudev" target="_blank" rel="noopener">☕ 在 Ko-fi 請我喝咖啡</a></p>
   </section>
   <script>
     if (new URLSearchParams(location.search).get('from') !== 'app') {
@@ -66,7 +88,8 @@
     }
   </script>
 
-  <footer>© 2026 Oscar Chiu · <a href="privacy/">隱私權政策</a> · <a href="terms/">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
+  <footer>© 2026 Oscar Chiu · <a href="privacy/" data-i18n="privacy">隱私權政策</a> · <a href="terms/" data-i18n="terms">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
 </main>
+<script src="localization.js"></script>
 </body>
 </html>
