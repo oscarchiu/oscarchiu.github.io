@@ -6,6 +6,7 @@
 <title>來聊 LoiLiau 使用條款</title>
 <meta name="description" content="使用來聊 LoiLiau 的規則：免費服務、使用者的責任、不容許的行為，以及服務的限制。">
 <link rel="canonical" href="https://oscarchiu.dev/loiliau/terms/">
+<link rel="stylesheet" href="../language.css">
 <style>
   :root { --ink: #17221A; --muted: #4A5650; --green: #3B7437; --line: #D6DDD3; --bg: #F5F7F2; }
   * { box-sizing: border-box; }
@@ -24,46 +25,60 @@
 </head>
 <body>
 <main>
-  <header><div class="icon" aria-hidden="true">聊</div><h1>來聊 LoiLiau 使用條款</h1></header>
-  <p class="meta">生效日期：2026 年 10 月 26 日</p>
+  <nav class="lang" aria-label="Language">
+    <label>
+      <span class="sr-only">語言 / Language / Bahasa</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+      <select id="language-select">
+        <option value="zh" lang="zh-Hant">繁體中文</option>
+        <option value="en" lang="en">English</option>
+        <option value="id" lang="id">Bahasa Indonesia</option>
+      </select>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg>
+    </label>
+  </nav>
+  <header><div class="icon" aria-hidden="true">聊</div><h1 data-i18n="heading">來聊 LoiLiau 使用條款</h1></header>
+  <p class="meta" data-i18n="effective">生效日期：2026 年 10 月 26 日</p>
 
-  <p>來聊是由個人開發者邱士豪（Oscar Chiu）開發與維護的免費語音通話 app。使用來聊，就表示你同意以下條款。透過 App Store 下載時，Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">標準授權條款</a>也同樣適用。</p>
+  <p data-i18n="intro">來聊是由個人開發者邱士豪（Oscar Chiu）開發與維護的免費語音通話 app。使用來聊，就表示你同意以下條款。透過 App Store 下載時，Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">標準授權條款</a>也同樣適用。</p>
 
-  <h2>免費服務</h2>
-  <p>來聊免費提供，沒有廣告與付費功能。我們會盡力維持服務穩定，但不保證永遠可用、不中斷或沒有錯誤，也可能調整或停止部分功能。服務停止前，會盡量提早在 app 內告知。</p>
+  <h2 data-i18n="freeHeading">免費服務</h2>
+  <p data-i18n="freeBody">來聊免費提供，沒有廣告與付費功能。我們會盡力維持服務穩定，但不保證永遠可用、不中斷或沒有錯誤，也可能調整或停止部分功能。服務停止前，會盡量提早在 app 內告知。</p>
 
-  <h2>不能用來緊急求救</h2>
-  <p>來聊只能打給配對過的朋友，無法撥打 119、110 等緊急電話，也不保證每通電話都能接通。緊急時請用手機直接撥打緊急電話。</p>
+  <h2 data-i18n="emergencyHeading">不能用來緊急求救</h2>
+  <p data-i18n="emergencyBody">來聊只能打給配對過的朋友，無法撥打 119、110 等緊急電話，也不保證每通電話都能接通。緊急時請用手機直接撥打緊急電話。</p>
 
-  <h2>你的帳號</h2>
+  <h2 data-i18n="accountHeading">你的帳號</h2>
   <ul>
-    <li>名字與大頭貼由你提供，請使用不侵害他人權利的內容。</li>
-    <li>幫長輩設定的家人或看護，請先取得長輩同意，並協助他們了解如何使用。</li>
-    <li>訪客帳號只存在原本的手機，登出或換手機前請先綁定帳號，否則朋友名單無法找回。</li>
+    <li data-i18n="accountContent">名字與大頭貼由你提供，請使用不侵害他人權利的內容。</li>
+    <li data-i18n="accountConsent">幫長輩設定的家人或看護，請先取得長輩同意，並協助他們了解如何使用。</li>
+    <li data-i18n="accountGuest">訪客帳號只存在原本的手機，登出或換手機前請先綁定帳號，否則朋友名單無法找回。</li>
   </ul>
 
-  <h2>不容許的行為</h2>
-  <p>來聊對不當內容與濫用採零容忍。請不要：</p>
+  <h2 data-i18n="conductHeading">不容許的行為</h2>
+  <p data-i18n="conductIntro">來聊對不當內容與濫用採零容忍。請不要：</p>
   <ul>
-    <li>騷擾、威脅、詐騙或冒充他人；</li>
-    <li>使用色情、暴力、仇恨或其他令人反感的名字與大頭貼；</li>
-    <li>從事違法行為，或干擾、破解、濫用服務。</li>
+    <li data-i18n="conductHarassment">騷擾、威脅、詐騙或冒充他人；</li>
+    <li data-i18n="conductContent">使用色情、暴力、仇恨或其他令人反感的名字與大頭貼；</li>
+    <li data-i18n="conductIllegal">從事違法行為，或干擾、破解、濫用服務。</li>
   </ul>
-  <p>遇到不當的使用者，可以在「朋友名單」刪除或檢舉對方，刪除後雙方都無法再互打；也可以寫信檢舉。我們會在 24 小時內處理檢舉，必要時移除內容並停用違規帳號。</p>
+  <p data-i18n="reportsBody">遇到不當的使用者，可以在「朋友名單」刪除或檢舉對方，刪除後雙方都無法再互打；也可以寫信檢舉。我們會在 24 小時內處理檢舉，必要時移除內容並停用違規帳號。</p>
 
-  <h2>責任限制</h2>
-  <p>在法律允許的範圍內，對於因使用或無法使用來聊所造成的損失（例如漏接電話、通話中斷、資料遺失），我們不負賠償責任。</p>
+  <h2 data-i18n="liabilityHeading">責任限制</h2>
+  <p data-i18n="liabilityBody">在法律允許的範圍內，對於因使用或無法使用來聊所造成的損失（例如漏接電話、通話中斷、資料遺失），我們不負賠償責任。</p>
 
-  <h2>隱私</h2>
-  <p>我們如何處理你的資料，寫在<a href="../privacy/">隱私權政策</a>。</p>
+  <h2 data-i18n="privacyHeading">隱私</h2>
+  <p data-i18n="privacyBody">我們如何處理你的資料，寫在<a href="../privacy/">隱私權政策</a>。</p>
 
-  <h2>條款變更與準據法</h2>
-  <p>條款有變更時會更新這個頁面與上方的生效日期；重大變更會在 app 內告知。本條款以中華民國法律為準據法。</p>
+  <h2 data-i18n="changesHeading">條款變更與準據法</h2>
+  <p data-i18n="changesBody">條款有變更時會更新這個頁面與上方的生效日期；重大變更會在 app 內告知。本條款以中華民國法律為準據法。</p>
 
-  <h2>聯絡我們</h2>
-  <p>問題或檢舉，請寫信到 <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>。</p>
+  <h2 data-i18n="contactHeading">聯絡我們</h2>
+  <p data-i18n="contactBody">問題或檢舉，請寫信到 <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>。</p>
 
-  <footer>© 2026 Oscar Chiu · <a href="../">來聊</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
+  <footer>© 2026 Oscar Chiu · <a href="../" data-i18n="homeLink">來聊</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
 </main>
+<script src="../language.js"></script>
+<script src="localization.js"></script>
 </body>
 </html>

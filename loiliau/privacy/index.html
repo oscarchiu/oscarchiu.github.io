@@ -6,6 +6,7 @@
 <title>來聊 LoiLiau 隱私權政策</title>
 <meta name="description" content="來聊 LoiLiau 收集哪些資料、為什麼收、存在哪裡、怎麼刪除。">
 <link rel="canonical" href="https://oscarchiu.dev/loiliau/privacy/">
+<link rel="stylesheet" href="../language.css">
 <style>
   :root { --ink: #17221A; --muted: #4A5650; --green: #3B7437; --line: #D6DDD3; --bg: #F5F7F2; }
   * { box-sizing: border-box; }
@@ -27,62 +28,76 @@
 </head>
 <body>
 <main>
-  <header><div class="icon" aria-hidden="true">聊</div><h1>來聊 LoiLiau 隱私權政策</h1></header>
-  <p class="meta">生效日期：2026 年 10 月 28 日</p>
+  <nav class="lang" aria-label="Language">
+    <label>
+      <span class="sr-only">語言 / Language / Bahasa</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c5 5 5 13 0 18-5-5-5-13 0-18Z"/></svg>
+      <select id="language-select">
+        <option value="zh" lang="zh-Hant">繁體中文</option>
+        <option value="en" lang="en">English</option>
+        <option value="id" lang="id">Bahasa Indonesia</option>
+      </select>
+      <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m7 10 5 5 5-5"/></svg>
+    </label>
+  </nav>
+  <header><div class="icon" aria-hidden="true">聊</div><h1 data-i18n="heading">來聊 LoiLiau 隱私權政策</h1></header>
+  <p class="meta" data-i18n="effective">生效日期：2026 年 10 月 28 日</p>
 
-  <p>來聊是給長輩用的免費語音通話 app，由個人開發者邱士豪（Oscar Chiu）開發與維護。這份政策說明 app 收集哪些資料、為什麼收、存在哪裡，以及怎麼刪除。</p>
-  <p><strong>簡單說：</strong>只收打電話需要的資料；不放廣告、不做分析追蹤、不賣也不分享資料給廣告商。通話內容加密傳送，不錄音、不儲存。</p>
+  <p data-i18n="intro">來聊是給長輩用的免費語音通話 app，由個人開發者邱士豪（Oscar Chiu）開發與維護。這份政策說明 app 收集哪些資料、為什麼收、存在哪裡，以及怎麼刪除。</p>
+  <p data-i18n="summary"><strong>簡單說：</strong>只收打電話需要的資料；不放廣告、不做分析追蹤、不賣也不分享資料給廣告商。通話內容加密傳送，不錄音、不儲存。</p>
 
-  <h2>收集的資料</h2>
+  <h2 data-i18n="dataHeading">收集的資料</h2>
   <table>
-    <tr><th>資料</th><th>用途</th></tr>
-    <tr><td>名字</td><td>顯示在朋友的名單與來電畫面。</td></tr>
-    <tr><td>大頭貼（選填）</td><td>你自己的照片，以及你替朋友選的照片，顯示在名單與來電畫面。</td></tr>
-    <tr><td>信箱</td><td>用信箱、Google 或 Apple 登入時，用來登入、找回帳號與寄驗證信。訪客不需要信箱。用 Apple 登入並選擇隱藏信箱時，我們只拿到 Apple 的轉寄地址。</td></tr>
-    <tr><td>帳號編號</td><td>Firebase 產生的使用者編號，用來辨識你的帳號。</td></tr>
-    <tr><td>朋友名單與稱呼</td><td>你配對過的朋友，以及你替他們取的稱呼（只有你看得到）。</td></tr>
-    <tr><td>配對碼</td><td>加朋友用的 6 位數號碼，10 分鐘後失效。</td></tr>
-    <tr><td>通話紀錄</td><td>誰打給誰、時間與狀態，以及建立連線所需的網路資訊（可能包含 IP 位址）。用來接通電話。朋友打來你沒接到時，會在你的朋友名單記下時間，顯示「未接來電」，你回撥後清除。</td></tr>
-    <tr><td>檢舉內容</td><td>你檢舉朋友時選的原因、補充說明，以及雙方的名字與帳號編號，以電子郵件寄給開發者處理。</td></tr>
-    <tr><td>推播 token</td><td>手機的推播識別碼，用來在 app 沒開時讓手機響鈴。</td></tr>
+    <tr><th data-i18n="dataLabel">資料</th><th data-i18n="purposeLabel">用途</th></tr>
+    <tr><td data-i18n="nameLabel">名字</td><td data-i18n="namePurpose">顯示在朋友的名單與來電畫面。</td></tr>
+    <tr><td data-i18n="photoLabel">大頭貼（選填）</td><td data-i18n="photoPurpose">你自己的照片，以及你替朋友選的照片，顯示在名單與來電畫面。</td></tr>
+    <tr><td data-i18n="emailLabel">信箱</td><td data-i18n="emailPurpose">用信箱、Google 或 Apple 登入時，用來登入、找回帳號與寄驗證信。訪客不需要信箱。用 Apple 登入並選擇隱藏信箱時，我們只拿到 Apple 的轉寄地址。</td></tr>
+    <tr><td data-i18n="accountLabel">帳號編號</td><td data-i18n="accountPurpose">Firebase 產生的使用者編號，用來辨識你的帳號。</td></tr>
+    <tr><td data-i18n="friendsLabel">朋友名單與稱呼</td><td data-i18n="friendsPurpose">你配對過的朋友，以及你替他們取的稱呼（只有你看得到）。</td></tr>
+    <tr><td data-i18n="pairingLabel">配對碼</td><td data-i18n="pairingPurpose">加朋友用的 6 位數號碼，10 分鐘後失效。</td></tr>
+    <tr><td data-i18n="callsLabel">通話紀錄</td><td data-i18n="callsPurpose">誰打給誰、時間與狀態，以及建立連線所需的網路資訊（可能包含 IP 位址）。用來接通電話。朋友打來你沒接到時，會在你的朋友名單記下時間，顯示「未接來電」，你回撥後清除。</td></tr>
+    <tr><td data-i18n="reportsLabel">檢舉內容</td><td data-i18n="reportsPurpose">你檢舉朋友時選的原因、補充說明，以及雙方的名字與帳號編號，以電子郵件寄給開發者處理。</td></tr>
+    <tr><td data-i18n="pushLabel">推播 token</td><td data-i18n="pushPurpose">手機的推播識別碼，用來在 app 沒開時讓手機響鈴。</td></tr>
   </table>
-  <p>我們<strong>不收集</strong>：通話錄音、通訊錄、位置、廣告識別碼、使用行為分析。</p>
+  <p data-i18n="notCollected">我們<strong>不收集</strong>：通話錄音、通訊錄、位置、廣告識別碼、使用行為分析。</p>
 
-  <h2>手機權限</h2>
+  <h2 data-i18n="permissionsHeading">手機權限</h2>
   <ul>
-    <li><strong>麥克風</strong>：通話時使用。</li>
-    <li><strong>相機</strong>：掃描朋友的 QR code，或拍大頭貼。</li>
-    <li><strong>照片</strong>：從相簿選大頭貼，只讀取你選的那張。</li>
-    <li><strong>通知</strong>：來電響鈴。</li>
+    <li data-i18n="microphonePermission"><strong>麥克風</strong>：通話時使用。</li>
+    <li data-i18n="cameraPermission"><strong>相機</strong>：掃描朋友的 QR code，或拍大頭貼。</li>
+    <li data-i18n="photosPermission"><strong>照片</strong>：從相簿選大頭貼，只讀取你選的那張。</li>
+    <li data-i18n="notificationsPermission"><strong>通知</strong>：來電響鈴。</li>
   </ul>
 
-  <h2>通話內容</h2>
-  <p>語音以 WebRTC 加密，在兩支手機之間直接傳送。網路無法直連時，會經過 Cloudflare 的中繼伺服器轉送，但仍是加密的，中繼伺服器聽不到內容。通話不會被錄音或儲存。</p>
+  <h2 data-i18n="voiceHeading">通話內容</h2>
+  <p data-i18n="voiceBody">語音以 WebRTC 加密，在兩支手機之間直接傳送。網路無法直連時，會經過 Cloudflare 的中繼伺服器轉送，但仍是加密的，中繼伺服器聽不到內容。通話不會被錄音或儲存。</p>
 
-  <h2>資料存在哪裡、交給誰處理</h2>
-  <p>資料存放在 Google Firebase（Firestore 位於台灣的 asia-east1 機房）。以下服務商只為了讓 app 運作而處理資料：</p>
+  <h2 data-i18n="providersHeading">資料存在哪裡、交給誰處理</h2>
+  <p data-i18n="providersIntro">資料存放在 Google Firebase（Firestore 位於台灣的 asia-east1 機房）。以下服務商只為了讓 app 運作而處理資料：</p>
   <ul>
-    <li><strong>Google Firebase</strong>：登入、資料庫、Android 推播。</li>
-    <li><strong>Apple</strong>：Apple 登入、iPhone 來電推播。</li>
-    <li><strong>Google 登入</strong>：用 Google 帳號登入時。</li>
-    <li><strong>Cloudflare</strong>：通話中繼與推播伺服器。</li>
+    <li data-i18n="firebaseProvider"><strong>Google Firebase</strong>：登入、資料庫、Android 推播。</li>
+    <li data-i18n="appleProvider"><strong>Apple</strong>：Apple 登入、iPhone 來電推播。</li>
+    <li data-i18n="googleProvider"><strong>Google 登入</strong>：用 Google 帳號登入時。</li>
+    <li data-i18n="cloudflareProvider"><strong>Cloudflare</strong>：通話中繼與推播伺服器。</li>
   </ul>
-  <p>除法律要求外，我們不會把資料提供給其他人。</p>
+  <p data-i18n="disclosure">除法律要求外，我們不會把資料提供給其他人。</p>
 
-  <h2>保存期間與刪除</h2>
-  <p>資料保存到你刪除帳號為止。在 app 的「設定」最下面按「刪除帳號」，會立即刪除你的個人資料、大頭貼、朋友名單、配對碼、推播 token 與通話紀錄，你也會從朋友的名單上移除，最後刪除登入帳號。用 Apple 登入的帳號，也會一併撤銷來聊的 Apple 授權。</p>
-  <p>訪客帳號登出後，資料就無法再取回。如果無法使用 app，也可以寫信到下方信箱要求刪除。</p>
+  <h2 data-i18n="retentionHeading">保存期間與刪除</h2>
+  <p data-i18n="deleteBody">資料保存到你刪除帳號為止。在 app 的「設定」最下面按「刪除帳號」，會立即刪除你的個人資料、大頭貼、朋友名單、配對碼、推播 token 與通話紀錄，你也會從朋友的名單上移除，最後刪除登入帳號。用 Apple 登入的帳號，也會一併撤銷來聊的 Apple 授權。</p>
+  <p data-i18n="guestBody">訪客帳號登出後，資料就無法再取回。如果無法使用 app，也可以寫信到下方信箱要求刪除。</p>
 
-  <h2>兒童</h2>
-  <p>來聊不是為 13 歲以下兒童設計的，我們不會刻意收集兒童的資料。</p>
+  <h2 data-i18n="childrenHeading">兒童</h2>
+  <p data-i18n="childrenBody">來聊不是為 13 歲以下兒童設計的，我們不會刻意收集兒童的資料。</p>
 
-  <h2>政策變更</h2>
-  <p>政策有變更時會更新這個頁面與上方的生效日期；重大變更會在 app 內告知。</p>
+  <h2 data-i18n="changesHeading">政策變更</h2>
+  <p data-i18n="changesBody">政策有變更時會更新這個頁面與上方的生效日期；重大變更會在 app 內告知。</p>
 
-  <h2>聯絡我們</h2>
-  <p>對隱私有任何問題，或想查詢、更正、刪除你的資料，請寫信到 <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>。</p>
+  <h2 data-i18n="contactHeading">聯絡我們</h2>
+  <p data-i18n="contactBody">對隱私有任何問題，或想查詢、更正、刪除你的資料，請寫信到 <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>。</p>
 
-  <footer>© 2026 Oscar Chiu · <a href="../">來聊</a> · <a href="../terms/">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
+  <footer>© 2026 Oscar Chiu · <a href="../" data-i18n="homeLink">來聊</a> · <a href="../terms/" data-i18n="termsLink">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
 </main>
+<script src="../language.js"></script>
+<script src="localization.js"></script>
 </body>
 </html>
