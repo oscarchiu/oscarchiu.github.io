@@ -17,7 +17,7 @@
     'nav.work': 'Work',
     'nav.notes': 'Experience',
     'nav.contact': 'Contact',
-    'hero.title': 'Ship the whole<br>product.',
+    'hero.title': 'Your digital challenges,<br>I’ll find a way.',
     'hero.lead': 'iOS developer since 2013, also building Laravel websites and admin backends. At a health-tech company I take diagnostic apps, their backends and the company websites from first build to launch, and keep them running.',
     'cta.mail': 'Email me',
     'cta.line': 'Chat on LINE',
@@ -27,7 +27,7 @@
     'work.label': 'NOW PLAYING · WORK',
     'work.name': '',
     'work.desc': 'A voice-call app built for my 94-year-old grandmother: big buttons, few steps, open it and call family.',
-    'work.demo': 'Try the demo in your browser →',
+    'work.intro': 'Meet LoiLiau →',
     'svc.title': 'What I can build for you',
     'svc.1.t': 'iOS apps',
     'svc.1.d': 'New builds, maintenance and redesigns in Swift, UIKit and SwiftUI, including legacy Objective-C codebases.',
@@ -46,12 +46,11 @@
     'contact.label': 'SESSION — REMOTE FIRST',
     'contact.title': 'Let’s talk about your product.',
     'contact.lead': 'Not sure what you need yet? That’s fine. We can scope it together, estimate the hours and ship in phases.',
-    'contact.line': 'LINE',
-    'contact.demo': 'Demos'
+    'contact.line': 'LINE'
   };
   var meta = {
     zh: { title: document.title, lang: 'zh-Hant-TW' },
-    en: { title: 'Oscar Chiu | Ship the whole product', lang: 'en' }
+    en: { title: 'Oscar Chiu | Your digital challenges, I’ll find a way', lang: 'en' }
   };
   var nodes = document.querySelectorAll('[data-i18n]');
   var zh = {};
