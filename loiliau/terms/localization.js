@@ -1,0 +1,65 @@
+// Translations of the existing terms; obligations and effective date are unchanged.
+window.initLoiLiauLanguage({
+  meta: {
+    en: { lang: 'en', title: 'LoiLiau Terms of Use', description: 'Rules for using LoiLiau: free service, user responsibilities, prohibited conduct, and service limitations.' },
+    id: { lang: 'id', title: 'Ketentuan Penggunaan LoiLiau', description: 'Aturan penggunaan LoiLiau: layanan gratis, tanggung jawab pengguna, perilaku yang dilarang, dan batasan layanan.' }
+  },
+  translations: {
+    en: {
+      heading: 'LoiLiau Terms of Use',
+      effective: 'Effective date: October 26, 2026',
+      intro: 'LoiLiau is a free voice-calling app developed and maintained by independent developer Oscar Chiu (邱士豪). By using LoiLiau, you agree to the following terms. If you download the app from the App Store, Apple’s <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard License Agreement</a> also applies.',
+      freeHeading: 'Free service',
+      freeBody: 'LoiLiau is free, with no ads or paid features. We do our best to keep the service stable, but do not guarantee that it will always be available, uninterrupted, or error-free. We may also change or discontinue some features. Where possible, we will give advance notice in the app before discontinuing the service.',
+      emergencyHeading: 'Not for emergency calls',
+      emergencyBody: 'LoiLiau can only call friends you have paired with. It cannot dial emergency numbers such as 119 or 110, and successful connection of every call is not guaranteed. In an emergency, use your phone’s regular dialer to call the emergency number directly.',
+      accountHeading: 'Your account',
+      accountContent: 'You provide your name and profile photo. Use content that does not infringe others’ rights.',
+      accountConsent: 'Family members or caregivers setting up the app for an older adult must first obtain their consent and help them understand how to use it.',
+      accountGuest: 'A guest account stays on the original phone. Link an account before signing out or changing phones; otherwise, your friends list cannot be recovered.',
+      conductHeading: 'Prohibited conduct',
+      conductIntro: 'LoiLiau has zero tolerance for objectionable content and abuse. Do not:',
+      conductHarassment: 'Harass, threaten, defraud, or impersonate others;',
+      conductContent: 'Use names or profile photos containing pornography, violence, hate, or other objectionable content;',
+      conductIllegal: 'Engage in illegal activities, or disrupt, hack, or abuse the service.',
+      reportsBody: 'If you encounter an inappropriate user, you can remove or report them in the friends list. After removal, neither of you can call the other. You can also report users by email. We will handle reports within 24 hours and, when necessary, remove content and disable accounts that violate these terms.',
+      liabilityHeading: 'Limitation of liability',
+      liabilityBody: 'To the extent permitted by law, we are not liable for losses resulting from your use of, or inability to use, LoiLiau (such as missed calls, interrupted calls, or data loss).',
+      privacyHeading: 'Privacy',
+      privacyBody: 'Our <a href="../privacy/">Privacy Policy</a> explains how we handle your data.',
+      changesHeading: 'Changes to these terms and governing law',
+      changesBody: 'If these terms change, we will update this page and the effective date above. Significant changes will be announced in the app. These terms are governed by the laws of the Republic of China (Taiwan).',
+      contactHeading: 'Contact us',
+      contactBody: 'For questions or reports, email <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>.',
+      homeLink: 'LoiLiau'
+    },
+    id: {
+      heading: 'Ketentuan Penggunaan LoiLiau',
+      effective: 'Tanggal berlaku: 26 Oktober 2026',
+      intro: 'LoiLiau adalah aplikasi panggilan suara gratis yang dikembangkan dan dikelola oleh pengembang independen Oscar Chiu (邱士豪). Dengan menggunakan LoiLiau, Anda menyetujui ketentuan berikut. Jika Anda mengunduh aplikasi dari App Store, <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Perjanjian Lisensi Standar Apple</a> juga berlaku.',
+      freeHeading: 'Layanan gratis',
+      freeBody: 'LoiLiau tersedia gratis, tanpa iklan atau fitur berbayar. Kami berusaha menjaga kestabilan layanan, tetapi tidak menjamin layanan selalu tersedia, tanpa gangguan, atau tanpa kesalahan. Kami juga dapat mengubah atau menghentikan sebagian fitur. Jika memungkinkan, kami akan memberikan pemberitahuan terlebih dahulu di dalam aplikasi sebelum menghentikan layanan.',
+      emergencyHeading: 'Bukan untuk panggilan darurat',
+      emergencyBody: 'LoiLiau hanya dapat menelepon teman yang telah dipasangkan. Aplikasi ini tidak dapat menghubungi nomor darurat seperti 119 atau 110, dan tidak menjamin setiap panggilan berhasil tersambung. Dalam keadaan darurat, gunakan fitur telepon biasa di ponsel untuk menghubungi nomor darurat secara langsung.',
+      accountHeading: 'Akun Anda',
+      accountContent: 'Nama dan foto profil disediakan oleh Anda. Gunakan konten yang tidak melanggar hak orang lain.',
+      accountConsent: 'Anggota keluarga atau pengasuh yang menyiapkan aplikasi untuk lansia harus terlebih dahulu memperoleh persetujuan mereka dan membantu mereka memahami cara menggunakannya.',
+      accountGuest: 'Akun tamu hanya tersimpan di ponsel semula. Tautkan akun sebelum keluar atau mengganti ponsel; jika tidak, daftar teman tidak dapat dipulihkan.',
+      conductHeading: 'Perilaku yang dilarang',
+      conductIntro: 'LoiLiau tidak menoleransi konten yang tidak pantas dan penyalahgunaan. Jangan:',
+      conductHarassment: 'Melecehkan, mengancam, menipu, atau menyamar sebagai orang lain;',
+      conductContent: 'Menggunakan nama atau foto profil yang mengandung pornografi, kekerasan, kebencian, atau konten lain yang tidak pantas;',
+      conductIllegal: 'Melakukan tindakan ilegal, atau mengganggu, meretas, atau menyalahgunakan layanan.',
+      reportsBody: 'Jika menemukan pengguna yang berperilaku tidak pantas, Anda dapat menghapus atau melaporkannya melalui daftar teman. Setelah dihapus, kalian tidak dapat saling menelepon. Anda juga dapat melaporkan pengguna melalui email. Kami akan menangani laporan dalam waktu 24 jam dan, jika diperlukan, menghapus konten serta menonaktifkan akun yang melanggar ketentuan.',
+      liabilityHeading: 'Batasan tanggung jawab',
+      liabilityBody: 'Sejauh diizinkan oleh hukum, kami tidak bertanggung jawab atas kerugian akibat penggunaan atau ketidakmampuan menggunakan LoiLiau (seperti panggilan tak terjawab, panggilan terputus, atau kehilangan data).',
+      privacyHeading: 'Privasi',
+      privacyBody: '<a href="../privacy/">Kebijakan Privasi</a> kami menjelaskan cara kami menangani data Anda.',
+      changesHeading: 'Perubahan ketentuan dan hukum yang berlaku',
+      changesBody: 'Jika ketentuan ini berubah, kami akan memperbarui halaman ini dan tanggal berlaku di atas. Perubahan penting akan diberitahukan di dalam aplikasi. Ketentuan ini diatur oleh hukum Republik Tiongkok (Taiwan).',
+      contactHeading: 'Hubungi kami',
+      contactBody: 'Untuk pertanyaan atau laporan, kirim email ke <a href="mailto:oscar@oscarchiu.dev">oscar@oscarchiu.dev</a>.',
+      homeLink: 'LoiLiau'
+    }
+  }
+});

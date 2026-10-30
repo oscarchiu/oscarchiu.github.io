@@ -6,6 +6,7 @@
 <title>來聊 LoiLiau：給長輩用的免費語音通話</title>
 <meta name="description" content="來聊是給長輩用的免費語音通話 app：家人幫忙設定一次，長輩之後點一下朋友就能撥出。使用說明、常見問題與聯絡方式。">
 <link rel="canonical" href="https://oscarchiu.dev/loiliau/">
+<link rel="stylesheet" href="language.css">
 <style>
   :root { --ink: #17221A; --muted: #4A5650; --green: #3B7437; --line: #D6DDD3; --bg: #F5F7F2; }
   * { box-sizing: border-box; }
@@ -22,16 +23,6 @@
   a { color: var(--green); }
   .kofi { display: inline-block; padding: 10px 20px; border-radius: 999px; background: var(--green);
     color: #fff; font-weight: 700; text-decoration: none; }
-  .lang { display: flex; justify-content: flex-end; margin-bottom: 24px; }
-  .lang label { display: inline-flex; position: relative; max-width: 100%; }
-  .lang svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 18px; height: 18px; color: var(--green); pointer-events: none; }
-  .lang .chevron { left: auto; right: 12px; width: 16px; height: 16px; }
-  /* Reset native chrome so Safari honors padding and does not add a second arrow. */
-  .lang select { -webkit-appearance: none; appearance: none; display: block; font: inherit; font-size: 16px; line-height: 1.25;
-    cursor: pointer; color: var(--ink); background: #fff; border: 1px solid var(--line); border-radius: 8px;
-    padding: 10px 38px 10px 40px; min-height: 44px; max-width: 100%; }
-  .lang select:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
-  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
   footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
 </style>
 </head>
@@ -90,6 +81,7 @@
 
   <footer>© 2026 Oscar Chiu · <a href="privacy/" data-i18n="privacy">隱私權政策</a> · <a href="terms/" data-i18n="terms">使用條款</a> · <a href="https://oscarchiu.dev/">oscarchiu.dev</a></footer>
 </main>
+<script src="language.js"></script>
 <script src="localization.js"></script>
 </body>
 </html>

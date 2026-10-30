@@ -1,7 +1,6 @@
-// Same dependency-free data-i18n pattern as the portfolio. Chinese is the fallback.
-(function () {
-  'use strict';
-  var translations = {
+// Page copy; language selection is shared with the legal pages.
+window.initLoiLiauLanguage({
+  translations: {
     en: {
       name: 'LoiLiau',
       lead: 'Free voice calls designed for older adults. Family helps set it up once; after that, just tap a friend to call.',
@@ -19,7 +18,7 @@
       removeQuestion: 'Don’t want calls from someone anymore?',
       removeAnswer: 'Remove them from the friends list in Settings. Neither of you can call the other unless you pair again.',
       deleteQuestion: 'How do I delete my account?',
-      deleteAnswer: 'Tap “Delete account” at the bottom of Settings. Your data is deleted immediately. See the <a href="privacy/" lang="zh-Hant">Privacy Policy (Traditional Chinese)</a> for details.',
+      deleteAnswer: 'Tap “Delete account” at the bottom of Settings. Your data is deleted immediately. See the <a href="privacy/">Privacy Policy</a> for details.',
       emergencyQuestion: 'Can I call emergency numbers or regular phone numbers?',
       emergencyAnswer: 'No. LoiLiau only calls friends you have paired with. In an emergency, use your phone’s regular dialer to call the local emergency number (119 or 110 in Taiwan).',
       contact: 'Contact us',
@@ -27,8 +26,8 @@
       support: 'Support LoiLiau',
       supportBody: 'LoiLiau will stay free and ad-free. If it helps you and your family, you can buy the developer a coffee to help cover server and developer account costs.',
       coffee: '☕ Buy me a coffee on Ko-fi',
-      privacy: 'Privacy Policy (Traditional Chinese)',
-      terms: 'Terms of Use (Traditional Chinese)'
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Use'
     },
     id: {
       name: 'LoiLiau',
@@ -47,7 +46,7 @@
       removeQuestion: 'Tidak ingin menerima panggilan dari seseorang lagi?',
       removeAnswer: 'Hapus orang tersebut dari daftar teman di Pengaturan. Setelah dihapus, kalian tidak dapat saling menelepon kecuali melakukan pemasangan ulang.',
       deleteQuestion: 'Bagaimana cara menghapus akun?',
-      deleteAnswer: 'Ketuk “Hapus akun” di bagian paling bawah Pengaturan. Data Anda akan langsung dihapus. Lihat <a href="privacy/" lang="zh-Hant">Kebijakan Privasi (bahasa Mandarin Tradisional)</a> untuk detailnya.',
+      deleteAnswer: 'Ketuk “Hapus akun” di bagian paling bawah Pengaturan. Data Anda akan langsung dihapus. Lihat <a href="privacy/">Kebijakan Privasi</a> untuk detailnya.',
       emergencyQuestion: 'Bisakah saya menelepon nomor darurat atau nomor telepon biasa?',
       emergencyAnswer: 'Tidak. LoiLiau hanya dapat menelepon teman yang sudah dipasangkan. Dalam keadaan darurat, gunakan fitur telepon biasa di ponsel untuk menghubungi nomor darurat setempat (119 atau 110 di Taiwan).',
       contact: 'Hubungi kami',
@@ -55,43 +54,12 @@
       support: 'Dukung LoiLiau',
       supportBody: 'LoiLiau akan tetap gratis dan tanpa iklan. Jika aplikasi ini membantu Anda dan keluarga, Anda dapat mentraktir pengembang secangkir kopi untuk membantu biaya server dan akun pengembang.',
       coffee: '☕ Traktir saya kopi melalui Ko-fi',
-      privacy: 'Kebijakan Privasi (bahasa Mandarin Tradisional)',
-      terms: 'Ketentuan Penggunaan (bahasa Mandarin Tradisional)'
+      privacy: 'Kebijakan Privasi',
+      terms: 'Ketentuan Penggunaan'
     }
-  };
-  var meta = {
-    zh: { lang: 'zh-Hant-TW', title: document.title, description: document.querySelector('meta[name="description"]').content },
+  },
+  meta: {
     en: { lang: 'en', title: 'LoiLiau: Free voice calls for older adults', description: 'Free voice calls designed for older adults. Set up once with family, then tap a friend to call. Getting started, frequently asked questions, and support.' },
     id: { lang: 'id', title: 'LoiLiau: Panggilan suara gratis untuk lansia', description: 'Panggilan suara gratis untuk lansia. Keluarga membantu menyiapkan sekali, lalu tinggal ketuk foto teman untuk menelepon. Panduan, pertanyaan umum, dan bantuan.' }
-  };
-  var nodes = document.querySelectorAll('[data-i18n]');
-  var languageSelect = document.getElementById('language-select');
-  translations.zh = {};
-  nodes.forEach(function (node) { translations.zh[node.dataset.i18n] = node.innerHTML; });
-  function normalize(value) {
-    if (typeof value !== 'string') return null;
-    var code = value.toLowerCase().split('-')[0];
-    return Object.prototype.hasOwnProperty.call(meta, code) ? code : null;
   }
-  function apply(lang) {
-    nodes.forEach(function (node) { node.innerHTML = translations[lang][node.dataset.i18n]; });
-    document.documentElement.lang = meta[lang].lang;
-    document.title = meta[lang].title;
-    document.querySelector('meta[name="description"]').content = meta[lang].description;
-    languageSelect.value = lang;
-  }
-  var stored = null;
-  try { stored = normalize(localStorage.getItem('loiliau-language')); } catch (error) {}
-  var url = new URL(location.href);
-  var preferred = (navigator.languages || [navigator.language]).map(normalize).find(Boolean);
-  apply(normalize(url.searchParams.get('lang')) || stored || preferred || 'en');
-  languageSelect.addEventListener('change', function () {
-    var lang = languageSelect.value;
-    apply(lang);
-    try { localStorage.setItem('loiliau-language', lang); } catch (error) {}
-    // Keep from=app intact so switching languages never reveals the sponsor section.
-    var next = new URL(location.href);
-    next.searchParams.set('lang', lang);
-    try { history.replaceState(null, '', next); } catch (error) {}
-  });
-})();
+});
