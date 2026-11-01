@@ -1,4 +1,4 @@
-// Translations of the existing policy; its terms and effective date are unchanged.
+// Translations of the existing policy.
 window.initLoiLiauLanguage({
   meta: {
     en: { lang: 'en', title: 'LoiLiau Privacy Policy', description: 'What data LoiLiau collects, why it is collected, where it is stored, and how to delete it.' },
@@ -7,7 +7,7 @@ window.initLoiLiauLanguage({
   translations: {
     en: {
       heading: 'LoiLiau Privacy Policy',
-      effective: 'Effective date: October 28, 2026',
+      effective: 'Effective date: November 1, 2026',
       intro: 'LoiLiau is a free voice-calling app designed for older adults, developed and maintained by independent developer Oscar Chiu (邱士豪). This policy explains what data the app collects, why it is collected, where it is stored, and how to delete it.',
       summary: '<strong>In short:</strong> We only collect data needed to make calls. We do not show ads, track usage with analytics, or sell or share data with advertisers. Call audio is encrypted in transit and is never recorded or stored.',
       dataHeading: 'Data we collect',
@@ -25,6 +25,9 @@ window.initLoiLiauLanguage({
       friendsPurpose: 'Friends you have paired with and the nicknames you give them (visible only to you).',
       pairingLabel: 'Pairing code',
       pairingPurpose: 'A 6-digit code for adding friends that expires after 10 minutes.',
+      crashLabel: 'Crash and error reports',
+      crashPurpose: 'When the app crashes or hits an error, it sends the error details, the call steps leading up to it, your device model, system and app versions, and a randomly generated installation ID, so we can find and fix the problem. Reports do not include your name, email, profile photo, or friends list. The web version does not send them.',
+      crashRetention: 'Crash and error reports are not linked to your account, so they are not removed when you delete it. Google begins removing them after 90 days.',
       callsLabel: 'Call records',
       callsPurpose: 'Who called whom, the time and status, and network information needed to establish a connection (which may include IP addresses). This information is used to connect calls. If you miss a friend’s call, the time is saved in your friends list to show a “Missed call” indicator, which is cleared when you call back.',
       reportsLabel: 'Reports',
@@ -41,7 +44,7 @@ window.initLoiLiauLanguage({
       voiceBody: 'Audio is encrypted using WebRTC and sent directly between the two phones. When a direct connection is not possible, it is forwarded through Cloudflare’s relay servers, but remains encrypted; the relay servers cannot listen to the content. Calls are never recorded or stored.',
       providersHeading: 'Where data is stored and who processes it',
       providersIntro: 'Data is stored in Google Firebase (Firestore is hosted in the asia-east1 data center in Taiwan). The following providers process data solely to operate the app:',
-      firebaseProvider: '<strong>Google Firebase</strong>: Sign-in, database, and Android push notifications.',
+      firebaseProvider: '<strong>Google Firebase</strong>: Sign-in, database, Android push notifications, and crash and error reports (Crashlytics).',
       appleProvider: '<strong>Apple</strong>: Sign in with Apple and incoming call push notifications for iPhone.',
       googleProvider: '<strong>Google Sign-In</strong>: When you sign in with a Google account.',
       cloudflareProvider: '<strong>Cloudflare</strong>: Call relay and push notification servers.',
@@ -60,7 +63,7 @@ window.initLoiLiauLanguage({
     },
     id: {
       heading: 'Kebijakan Privasi LoiLiau',
-      effective: 'Tanggal berlaku: 28 Oktober 2026',
+      effective: 'Tanggal berlaku: 1 November 2026',
       intro: 'LoiLiau adalah aplikasi panggilan suara gratis untuk lansia, yang dikembangkan dan dikelola oleh pengembang independen Oscar Chiu (邱士豪). Kebijakan ini menjelaskan data yang dikumpulkan aplikasi, tujuannya, tempat penyimpanannya, dan cara menghapusnya.',
       summary: '<strong>Singkatnya:</strong> Kami hanya mengumpulkan data yang diperlukan untuk melakukan panggilan. Kami tidak menampilkan iklan, melakukan pelacakan melalui analitik, atau menjual maupun membagikan data kepada pengiklan. Audio panggilan dienkripsi saat dikirim dan tidak pernah direkam atau disimpan.',
       dataHeading: 'Data yang kami kumpulkan',
@@ -78,6 +81,9 @@ window.initLoiLiauLanguage({
       friendsPurpose: 'Teman yang telah dipasangkan dengan Anda dan nama panggilan yang Anda berikan kepada mereka (hanya terlihat oleh Anda).',
       pairingLabel: 'Kode pemasangan',
       pairingPurpose: 'Kode 6 digit untuk menambahkan teman, yang kedaluwarsa setelah 10 menit.',
+      crashLabel: 'Laporan kerusakan dan kesalahan',
+      crashPurpose: 'Saat aplikasi rusak atau mengalami kesalahan, aplikasi mengirim detail kesalahan, langkah panggilan sebelum kejadian, model perangkat, versi sistem dan aplikasi, serta ID pemasangan yang dibuat secara acak, agar kami dapat menemukan dan memperbaiki masalah. Laporan tidak mencakup nama, email, foto profil, atau daftar teman Anda. Versi web tidak mengirimkannya.',
+      crashRetention: 'Laporan kerusakan dan kesalahan tidak ditautkan ke akun Anda, sehingga tidak ikut terhapus saat akun dihapus. Google mulai menghapusnya setelah 90 hari.',
       callsLabel: 'Catatan panggilan',
       callsPurpose: 'Siapa menelepon siapa, waktu dan status panggilan, serta informasi jaringan yang diperlukan untuk membuat koneksi (yang dapat mencakup alamat IP). Informasi ini digunakan untuk menyambungkan panggilan. Jika panggilan teman tidak terjawab, waktunya dicatat di daftar teman untuk menampilkan penanda “Panggilan tak terjawab”, yang dihapus saat Anda menelepon balik.',
       reportsLabel: 'Laporan pengguna',
@@ -94,7 +100,7 @@ window.initLoiLiauLanguage({
       voiceBody: 'Audio dienkripsi menggunakan WebRTC dan dikirim langsung di antara kedua ponsel. Jika koneksi langsung tidak memungkinkan, audio diteruskan melalui server relai Cloudflare, tetapi tetap terenkripsi; server relai tidak dapat mendengarkan isinya. Panggilan tidak pernah direkam atau disimpan.',
       providersHeading: 'Tempat penyimpanan data dan pihak yang memprosesnya',
       providersIntro: 'Data disimpan di Google Firebase (Firestore berada di pusat data asia-east1 di Taiwan). Penyedia berikut memproses data hanya untuk menjalankan aplikasi:',
-      firebaseProvider: '<strong>Google Firebase</strong>: Login, basis data, dan notifikasi push Android.',
+      firebaseProvider: '<strong>Google Firebase</strong>: Login, basis data, notifikasi push Android, serta laporan kerusakan dan kesalahan (Crashlytics).',
       appleProvider: '<strong>Apple</strong>: Masuk dengan Apple dan notifikasi push panggilan masuk di iPhone.',
       googleProvider: '<strong>Login Google</strong>: Saat Anda masuk dengan akun Google.',
       cloudflareProvider: '<strong>Cloudflare</strong>: Server relai panggilan dan notifikasi push.',

@@ -41,7 +41,7 @@
     </label>
   </nav>
   <header><div class="icon" aria-hidden="true">聊</div><h1 data-i18n="heading">來聊 LoiLiau 隱私權政策</h1></header>
-  <p class="meta" data-i18n="effective">生效日期：2026 年 10 月 28 日</p>
+  <p class="meta" data-i18n="effective">生效日期：2026 年 11 月 1 日</p>
 
   <p data-i18n="intro">來聊是給長輩用的免費語音通話 app，由個人開發者邱士豪（Oscar Chiu）開發與維護。這份政策說明 app 收集哪些資料、為什麼收、存在哪裡，以及怎麼刪除。</p>
   <p data-i18n="summary"><strong>簡單說：</strong>只收打電話需要的資料；不放廣告、不做分析追蹤、不賣也不分享資料給廣告商。通話內容加密傳送，不錄音、不儲存。</p>
@@ -58,6 +58,7 @@
     <tr><td data-i18n="callsLabel">通話紀錄</td><td data-i18n="callsPurpose">誰打給誰、時間與狀態，以及建立連線所需的網路資訊（可能包含 IP 位址）。用來接通電話。朋友打來你沒接到時，會在你的朋友名單記下時間，顯示「未接來電」，你回撥後清除。</td></tr>
     <tr><td data-i18n="reportsLabel">檢舉內容</td><td data-i18n="reportsPurpose">你檢舉朋友時選的原因、補充說明，以及雙方的名字與帳號編號，以電子郵件寄給開發者處理。</td></tr>
     <tr><td data-i18n="pushLabel">推播 token</td><td data-i18n="pushPurpose">手機的推播識別碼，用來在 app 沒開時讓手機響鈴。</td></tr>
+    <tr><td data-i18n="crashLabel">當機與錯誤報告</td><td data-i18n="crashPurpose">app 當機或出錯時，傳送錯誤內容、發生前的通話步驟、裝置型號、系統與 app 版本，以及隨機產生的安裝識別碼，用來找出並修正問題。報告不包含你的名字、信箱、大頭貼或朋友名單。網頁版不會傳送。</td></tr>
   </table>
   <p data-i18n="notCollected">我們<strong>不收集</strong>：通話錄音、通訊錄、位置、廣告識別碼、使用行為分析。</p>
 
@@ -75,7 +76,7 @@
   <h2 data-i18n="providersHeading">資料存在哪裡、交給誰處理</h2>
   <p data-i18n="providersIntro">資料存放在 Google Firebase（Firestore 位於台灣的 asia-east1 機房）。以下服務商只為了讓 app 運作而處理資料：</p>
   <ul>
-    <li data-i18n="firebaseProvider"><strong>Google Firebase</strong>：登入、資料庫、Android 推播。</li>
+    <li data-i18n="firebaseProvider"><strong>Google Firebase</strong>：登入、資料庫、Android 推播、當機與錯誤報告（Crashlytics）。</li>
     <li data-i18n="appleProvider"><strong>Apple</strong>：Apple 登入、iPhone 來電推播。</li>
     <li data-i18n="googleProvider"><strong>Google 登入</strong>：用 Google 帳號登入時。</li>
     <li data-i18n="cloudflareProvider"><strong>Cloudflare</strong>：通話中繼與推播伺服器。</li>
@@ -84,6 +85,7 @@
 
   <h2 data-i18n="retentionHeading">保存期間與刪除</h2>
   <p data-i18n="deleteBody">資料保存到你刪除帳號為止。在 app 的「設定」最下面按「刪除帳號」，會立即刪除你的個人資料、大頭貼、朋友名單、配對碼、推播 token 與通話紀錄，你也會從朋友的名單上移除，最後刪除登入帳號。用 Apple 登入的帳號，也會一併撤銷來聊的 Apple 授權。</p>
+  <p data-i18n="crashRetention">當機與錯誤報告不會連結到你的帳號，因此不會隨帳號刪除，而是由 Google 在 90 天後開始移除。</p>
   <p data-i18n="guestBody">訪客帳號登出後，資料就無法再取回。如果無法使用 app，也可以寫信到下方信箱要求刪除。</p>
 
   <h2 data-i18n="childrenHeading">兒童</h2>
