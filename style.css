@@ -145,6 +145,20 @@ h2 { font-size: var(--fs-h2); line-height: 1.3; font-weight: 700; }
 .tracks:not(:hover):not(:focus-within) .track:first-child .track-no svg,
 .track:hover .track-no svg, .track:focus-visible .track-no svg { opacity: 1; transform: none; }
 
+/* Other apps — B-side */
+.apps { display: flex; flex-direction: column; gap: 32px; padding-top: 0; padding-bottom: 88px; }
+.app-card {
+  display: flex; align-items: flex-start; gap: 24px; max-width: 760px; padding: 24px;
+  border: 1px solid var(--rule); border-radius: 12px;
+}
+.app-icon { flex: none; width: 96px; height: 96px; border-radius: 22px; border: 1px solid var(--rule); }
+.app-body { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.app-body h3 { font: 600 var(--fs-h3)/1.3 var(--font-display); font-stretch: 108%; }
+.app-body > p:first-of-type { font-size: 15px; color: var(--slate); }
+.app-body .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.app-body .tags span { background: var(--midnight); color: var(--mist); }
+.store { font-size: 15px; font-weight: 500; }
+
 /* Liner notes */
 .notes { display: flex; flex-wrap: wrap; gap: 48px; padding-top: 16px; padding-bottom: 96px; }
 .notes-head { flex: 1 1 280px; display: flex; flex-direction: column; gap: 12px; }
@@ -221,6 +235,13 @@ html[lang="en"] .en-name { color: inherit; font-weight: 600; }
   }
   .track-no { grid-row: span 2; align-items: flex-start; padding-top: 6px; }
   .track-no svg { margin-top: 1px; }
+  .apps { gap: 16px; padding-bottom: 48px; }
+  .app-card { gap: 16px; padding: 20px 16px; }
+  .app-icon { width: 64px; height: 64px; border-radius: 15px; }
+  .store {
+    display: flex; align-items: center; justify-content: center; min-height: 48px;
+    border: 1px solid var(--brass); border-radius: 999px; text-decoration: none;
+  }
   .notes { gap: 16px; padding-bottom: 48px; }
   .notes-list > div { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
   .notes-list dt { padding-top: 0; font-size: 12px; }
