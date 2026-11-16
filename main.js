@@ -17,7 +17,7 @@
     'nav.work': 'Work',
     'nav.notes': 'Experience',
     'nav.contact': 'Contact',
-    'hero.title': 'Your digital challenges,<br>I’ll find a way.',
+    'hero.title': 'I build apps,<br>and the web behind them.',
     'hero.lead': 'iOS developer since 2013, also building Laravel websites and admin backends. At a health-tech company I take diagnostic apps, their backends and the company websites from first build to launch, and keep them running.',
     'cta.mail': 'Email me',
     'cta.line': 'Chat on LINE',
@@ -56,7 +56,7 @@
   };
   var meta = {
     zh: { title: document.title, lang: 'zh-Hant-TW' },
-    en: { title: 'Oscar Chiu | Your digital challenges, I’ll find a way', lang: 'en' }
+    en: { title: 'Oscar Chiu | App & Web Developer', lang: 'en' }
   };
   var nodes = document.querySelectorAll('[data-i18n]');
   var zh = {};
